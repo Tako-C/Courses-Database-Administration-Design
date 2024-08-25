@@ -1,37 +1,33 @@
-# Courses-Database-Administration-Design
-Welcome to the exercises I received while studying in the MySQL Database Administration: Beginner SQL Database Design course.
-It consists of basic MySQL usage, relationships between tables, and schema design according to normalized principles.
+# MySQL Database Administration: Beginner SQL Database Design
 
-## Course project
-- Mid-Course project
-- Final-Course project
+Welcome to the exercises I received while studying the **MySQL Database Administration: Beginner SQL Database Design** course. This repository contains projects focused on basic MySQL usage, relationships between tables, and schema design according to normalized principles.
 
+## Course Projects
 
-## Mid-Course project (mavenmoviesmini_normalized)
-INTRODUCING THE MID COURSE PROJECT
-  - THE SITUATION
-      - A new client, the owner of the Maven Movies DVD rental business, has reached out to you for help restructuring their non-normalized database.
-  - THE OBJECTIVE
-      - Use Your MySQL Database Administration skills to:
-        Design a better set of tables to store the data in the existing schema. Explain to the owner why the current system is not optimized for scale, and how you propose to improve it. Then, create a new schema with your ideal specifications and populate it                      with data.
+### Mid-Course Project: `mavenmoviesmini_normalized`
 
-## ER-Dirgram
-### Non_normalized
+#### Project Introduction
+A new client, the owner of Maven Movies, a DVD rental business, has reached out to you for help restructuring their non-normalized database.
+
+#### Objective
+Use your MySQL Database Administration skills to:
+- Design a better set of tables to store the data in the existing schema.
+- Explain to the owner why the current system is not optimized for scale, and how you propose to improve it.
+- Create a new schema with your ideal specifications and populate it with data.
+
+### Entity-Relationship Diagrams (ERD)
+
+#### Non-Normalized Schema
+![ER Diagram - Non-Normalized](https://github.com/Tako-C/Courses-Database-Administration-Design/blob/main/Photo/mavenmoviesmini-inventory_non_normalized.png?raw=true)
+
+- **Description**: The `inventory_non_normalized` table contains duplicated data across multiple columns, which can lead to issues when performing data operations like insert, update, or delete.
+
+#### Normalized Schema
+![ER Diagram - Normalized](https://github.com/Tako-C/Courses-Database-Administration-Design/blob/main/Photo/mavenmoviesmini_normalized.png?raw=true)
+
+- **Description**: The data has been separated into three tables:
+  - `inventorys`
+  - `films`
+  - `stores`
   
-  ![ER-Diargram-Non_normalized](https://github.com/Tako-C/Courses-Database-Administration-Design/blob/main/Photo/mavenmoviesmini-inventory_non_normalized.png?raw=true)
-  
-  inventory_non_normalized table Columns within this table There is duplication in data collection. That is, the same data is stored in multiple columns, which may cause problems when editing data (insert, update, delete).
-
-  
-### Normalized
-
-  ![ER-Diargram-Normalized](https://github.com/Tako-C/Courses-Database-Administration-Design/blob/main/Photo/mavenmoviesmini_normalized.png?raw=true)
-
-  Separate the table into 3 tables consisting of 
-  - inventorys
-  - films
-  - stores
-  Each table stores data related to its topic. All three tables are associated with each other to reduce duplication within tables, such as inventory and films having a many-to-one relationship. inventory and stores having a many-to-one relationship.
-  when editing information The information will be as current as possible.
-
-        
+Each table stores data related to its specific topic. The tables are associated with each other to reduce redundancy, with `inventory` and `films` having a many-to-one relationship, and `inventory` and `stores` having a many-to-one relationship. This structure ensures data consistency during edits.
