@@ -23,28 +23,6 @@ CREATE SCHEMA IF NOT EXISTS `mavenmoviesmini` DEFAULT CHARACTER SET utf8mb4 COLL
 -- Schema mavenmoviesmini_normalized
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `mavenmoviesmini_normalized` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
-USE `mavenmoviesmini` ;
-
--- -----------------------------------------------------
--- Table `mavenmoviesmini`.`inventory_non_normalized`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mavenmoviesmini`.`inventory_non_normalized` (
-  `inventory_id` BIGINT UNSIGNED NOT NULL,
-  `film_id` SMALLINT UNSIGNED NOT NULL,
-  `store_id` TINYINT UNSIGNED NOT NULL,
-  `title` VARCHAR(255) NOT NULL,
-  `description` TEXT NULL DEFAULT NULL,
-  `release_year` YEAR NULL DEFAULT NULL,
-  `rental_rate` DECIMAL(4,2) NOT NULL,
-  `rating` ENUM('G', 'PG', 'PG-13', 'R', 'NC-17') NULL DEFAULT 'G',
-  `store_manager_first_name` VARCHAR(45) NOT NULL,
-  `store_manager_last_name` VARCHAR(45) NOT NULL,
-  `store_address` VARCHAR(255) NOT NULL,
-  `store_city` VARCHAR(255) NOT NULL,
-  `store_district` VARCHAR(255) NOT NULL)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
 
 USE `mavenmoviesmini_normalized` ;
 
