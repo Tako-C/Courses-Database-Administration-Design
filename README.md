@@ -16,9 +16,9 @@ INTRODUCING THE MID COURSE PROJECT
         Design a better set of tables to store the data in the existing schema. Explain to the owner why the current system is not optimized for scale, and how you propose to improve it. Then, create a new schema with your ideal specifications and populate it                      with data.
 
 ## ER-Dirgram
-- mavenmoviesmini
-    - inventory_non_normalized
-- mavenmoviesmini_normalized
-    - inventory
+- Non_normalized
+     ![ER-Diargram-Non_normalized](https://github.com/Tako-C/Project-Bookstore-management/blob/main/Image/BooksStore-ER-V3.png?raw=true)
+- Normalized
+
 
         
