@@ -3,10 +3,10 @@
 Welcome to the exercises I received while studying the **MySQL Database Administration: Beginner SQL Database Design** course. This repository contains projects focused on basic MySQL usage, relationships between tables, and schema design according to normalized principles.
 
 ## Course Projects
-- Mid-Course Project
-- Final-Course Project
+- [Mid-Course Project](#Mid-Course-Project)
+- [Final-Course Project](#Final-Course-Project)
 
-### Mid-Course Project: `mavenmoviesmini_normalized`
+### `Mid-Course Project`: `mavenmoviesmini_normalized`
 
 #### Project Introduction
 A new client, the owner of Maven Movies, a DVD rental business, has reached out to you for help restructuring their non-normalized database.
@@ -68,7 +68,7 @@ Each table stores data related to its specific topic. The tables are associated 
   - This table establishes the many-to-many relationship between `films` and `stores`, indicating which films are available at which store locations.
 
 
-### Final-Course Project: `bobsbooties`
+### `Final-Course Project`: `bobsbooties`
 
 #### Project Introduction
 In this project, you will be tasked with restructuring a non-normalized database for bobsbooties, a fictional online store. The current database design is inefficient and not optimized for scalability. Your role is to redesign the database schema to improve its structure, ensure data integrity, and optimize it for future growth.
