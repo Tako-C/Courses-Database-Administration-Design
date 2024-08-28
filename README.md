@@ -31,3 +31,19 @@ Use your MySQL Database Administration skills to:
   - `stores`
   
 Each table stores data related to its specific topic. The tables are associated with each other to reduce redundancy, with `inventory` and `films` having a many-to-one relationship, and `inventory` and `stores` having a many-to-one relationship. This structure ensures data consistency during edits.
+
+
+
+### Final-Course Project: `bobsbooties`
+
+#### Project Introduction
+In this project, you will be tasked with restructuring a non-normalized database for bobsbooties, a fictional online store. The current database design is inefficient and not optimized for scalability. Your role is to redesign the database schema to improve its structure, ensure data integrity, and optimize it for future growth.
+
+#### Objective
+- Normalization: Redesign the existing database to eliminate redundancy and ensure data is organized efficiently across tables.
+- Scalability: Ensure that the new database design can handle an increase in data volume and user activity without performance degradation.
+- Data Integrity: Implement constraints and relationships that maintain the accuracy and consistency of the data.
+- ERD Design: Create an updated Entity-Relationship Diagram (ERD) to reflect the new, normalized schema.
+
+### Entity-Relationship Diagrams (ERD)
+
